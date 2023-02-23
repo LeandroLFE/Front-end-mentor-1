@@ -43,6 +43,33 @@ main {
   margin: 2rem;
 }
 
+.attribution {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.links {
+  margin: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+.links > * {
+  margin: 0 0.5rem;
+}
+.links img {
+  width: 1.5rem;
+}
+.links img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
 .container {
   background-color: hsl(0deg, 0%, 100%);
   width: 96%;
