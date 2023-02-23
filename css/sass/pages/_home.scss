@@ -1,0 +1,81 @@
+.container{
+    background-color: $white;
+    width: 96%;
+    display: block;
+    border-radius: 5px;
+
+    &__image{
+        & .image--mobile{
+            display: block;
+        }
+        
+        & .image--desktop{
+            display: none;
+        }
+        
+        & img{
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    &__text{
+        margin: 2rem;
+        & h1{
+            font-size: 2.5rem;
+            font-family: 'Fraunces';
+            line-height: 0.8;
+            margin: 5px;
+            color: $very-dark-blue;
+            font-weight: bolder;
+            text-align: left;
+            padding: 5px;
+        }
+        
+        
+        & h2{
+            color: $dark-grayish-blue;
+            margin: 5px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        
+        & p{
+            font-family: 'Montserrat';
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 2rem;
+            margin: 5px;
+            padding: 5px;
+            color: $dark-grayish-blue;
+            text-shadow: .1px .1px $dark-grayish-blue;
+        }
+    }
+
+    &__price{
+        margin: 15px;        
+        & .price--now{
+            color: $dark-cyan;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: 'Fraunces';
+        }
+
+        & .price--old{
+            text-decoration: line-through;
+            vertical-align: super;
+            margin-left: 1rem;
+            color: $dark-grayish-blue;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+}
